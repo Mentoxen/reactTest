@@ -17,7 +17,7 @@ const useFormData = () => {
     inputString.split('').forEach((value) => {
       word += value;
 
-      if (Array.from(inputWords.split(',')).includes(word)) {
+      if (inputWords.split(',').includes(word)) {
         answer.push(word);
         word = '';
       }
